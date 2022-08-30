@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.tooltip{
+			position: relative;
+			display: inline-block;
+			border-bottom: 3px dotted green;
+		}
+		.tooltip  .tooltipText{
+			width: 200px;
+			height: 200px;
+			padding: 19px 0;
+			top: -19px;
+			right: 105%;
+			position: absolute;
+			z-index: 1;
+			background-color: #555;
+			color: white;
+			border-radius: 85px;
+			text-align: center;
+			visibility: hidden;
+			background-image: radial-gradient(circle,red,yellow,green);
+		}
+		.tooltip:hover .tooltipText{
+			visibility: visible;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body style="text-align: center;">
+	<h2>Basic Tooltip</h2>
+	<p>move the mouse over the text below in order to me who am i ?</p>
+	<div class="tooltip">
+		my name is <span class="tooltipText"> THE SUN</span>
+	</div>
+</body>
+</html>
